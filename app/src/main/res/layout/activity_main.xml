@@ -39,28 +39,24 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_subtitle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_total"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Digite o valor total da conta"
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_number_of_people"
+    <Spinner
+        android:id="@+id/spinner_number_of_people"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_total">
+        app:layout_constraintTop_toBottomOf="@+id/til_total"/>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:maxLength="2"
-            android:inputType="number"
-            android:hint="Digite o número de pessoas na mesa" />
-    </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vertical_guideline"
@@ -68,6 +64,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.5" />
+
 
     <Button
         android:id="@+id/btn_clean"
@@ -78,8 +75,8 @@
         android:layout_marginEnd="8dp"
         android:text="Limpar"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
-        app:layout_constraintStart_toStartOf="@+id/til_number_of_people"
-        app:layout_constraintTop_toBottomOf="@+id/til_number_of_people" />
+        app:layout_constraintStart_toStartOf="@+id/spinner_number_of_people"
+        app:layout_constraintTop_toBottomOf="@+id/rg_percentage" />
 
 
     <Button
@@ -90,11 +87,55 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="Calcular"
-        app:layout_constraintEnd_toEndOf="@+id/til_number_of_people"
+        app:layout_constraintEnd_toEndOf="@id/spinner_number_of_people"
         app:layout_constraintStart_toEndOf="@+id/vertical_guideline"
-        app:layout_constraintTop_toBottomOf="@+id/til_number_of_people" />
+        app:layout_constraintTop_toBottomOf="@+id/rg_percentage" />
+
+    <RadioGroup
+        android:id="@+id/rg_percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/til_total"
+        app:layout_constraintStart_toStartOf="@+id/til_total"
+        app:layout_constraintTop_toBottomOf="@id/spinner_number_of_people">
+
+        <RadioButton
+            android:id="@+id/rb_option_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10%" />
+
+        <RadioButton
+            android:id="@+id/rb_option_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15%" />
+
+        <RadioButton
+            android:id="@+id/rb_option_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20%" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_clean"
+        tools:text="Resultado" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
