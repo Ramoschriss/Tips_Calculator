@@ -1,14 +1,13 @@
+ #  Tips Calculator
+Este projeto consiste em um aplicativo nativo para Android, desenvolvido utilizando a linguagem Kotlin. Sua principal funcionalidade é realizar o cálculo do valor total de uma conta, incluindo a porcentagem de gorjeta que o usuário deseja adicionar.
+
+
+## 📸: Screenshots
 
 
 
 
-
-
-
-
-
-
-
+## 💻:Tecnologias
 
 
 
