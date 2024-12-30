@@ -3,19 +3,27 @@ Este projeto consiste em um aplicativo nativo para Android, desenvolvido utiliza
 
 
 ## 📸: Screenshots
-
-
+<img src=https://github.com/user-attachments/assets/be4272b0-dab1-4890-86dc-05d5ba3eedb4 width=200/>
+<img src=https://github.com/user-attachments/assets/d2b0a99d-1179-4866-a894-038de50e9cb3 width=200/>
+<img src=https://github.com/user-attachments/assets/799ec0b8-643c-4f4b-a8f6-49d425fc8942 width=200/>
 
 
 ## 💻:Tecnologias
-
-
-
-
-
-
-
-
+- Activity
+- Array
+- Adapter
+- View Groups
+  - LinearLayout
+  - ConstranitLayout
+  - AdpterView
+  
+- Views 
+  - ImageView
+  - TextView
+  - EditText
+  - Spinner
+  - Button
+  - RadioButton
 
 
 ## License
