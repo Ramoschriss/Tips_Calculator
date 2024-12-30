@@ -2,6 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Tips_Calculator" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/azul</item>
+        <item name="android:statusBarColor">@color/black</item>
     </style>
 </resources>

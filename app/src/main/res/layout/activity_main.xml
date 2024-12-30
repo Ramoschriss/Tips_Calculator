@@ -7,6 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradiente_bg">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="400dp"
+            android:src="@drawable/ic_calculator" />
+
+
+    </LinearLayout>
+
+
+
+
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
@@ -14,7 +32,9 @@
         android:layout_margin="16dp"
         android:gravity="center_horizontal"
         android:text="Tips calculator"
+        android:textColor="@color/black"
         android:textSize="32sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +44,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Preencha os campos abaixo para realizar o calculo da sua coma"
+        android:text="Preencha os campos abaixo para realizar o calculo da sua conta"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
@@ -34,6 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        app:counterTextColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_subtitle">
@@ -43,7 +65,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Digite o valor total da conta"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
@@ -53,9 +76,7 @@
         android:layout_margin="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_total"/>
-
-
+        app:layout_constraintTop_toBottomOf="@+id/til_total" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -74,6 +95,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="Limpar"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
         app:layout_constraintStart_toStartOf="@+id/spinner_number_of_people"
         app:layout_constraintTop_toBottomOf="@+id/rg_percentage" />
@@ -87,6 +109,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="Calcular"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/spinner_number_of_people"
         app:layout_constraintStart_toEndOf="@+id/vertical_guideline"
         app:layout_constraintTop_toBottomOf="@+id/rg_percentage" />
@@ -107,19 +130,22 @@
             android:id="@+id/rb_option_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10%" />
+            android:text="10%"
+            android:textColor="@color/black" />
 
         <RadioButton
             android:id="@+id/rb_option_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="15%" />
+            android:text="15%"
+            android:textColor="@color/black" />
 
         <RadioButton
             android:id="@+id/rb_option_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="20%" />
+            android:text="20%"
+            android:textColor="@color/black" />
 
     </RadioGroup>
 
@@ -128,7 +154,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:textColor="@color/black"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_clean"
